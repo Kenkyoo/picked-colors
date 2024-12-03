@@ -1,0 +1,50 @@
+/* style.css */
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#head {
+    margin-top: 30px;
+}
+
+/* Search */
+.search {
+    margin-bottom: 40px;
+}
+
+input[type="text"] {
+    width: 400px;
+}
+
+/* Table */
+tr {
+    cursor: pointer;
+}
+
+/* Modal */
+.content-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.copy, .random {
+    cursor: pointer;
+}
+
+/* Random Container */
+.random-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+

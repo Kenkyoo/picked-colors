@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador de Colores</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="header">
+    <nav class="ui top fixed inverted menu" role="navigation">
+      <div class="item">
+        <i class="tint icon" aria-hidden="true"></i>
+      </div>
+      <a href="#header" class="item">Home</a>
+      <a href="#main" class="item">Menu</a>
+      <a href="#footer" class="item">Contact</a>
+    </nav>
+    <div class="ui grid">
+      <div class="sixteen wide column">
+        <h2 class="ui center aligned icon header" id="head">
+          <i class="tint huge icon" aria-hidden="true"></i>
+          Tint
+          <div class="sub header">Explora la diversidad del espectro de colores</div>
+        </h2>
+      </div>
+    </div>
+    <div class="ui eight column centered grid">
+      <div class="ui search">
+        <div class="ui icon input">
+          <input class="prompt" type="text" placeholder="Search colors..." aria-label="Search colors">
+          <i class="search icon" aria-hidden="true"></i>
+        </div>
+        <div class="results"></div>
+      </div>
+    </div>
+    <div class="ui eight column centered grid">
+      <div class="random-container">
+        <button id="randomBtn" class="ui button">
+          <i class="random large icon" aria-hidden="true"></i>
+          Random
+        </button>
+        <p>Elije uno al azar</p>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="ui centered grid">
+      <div class="twelve wide column">
+        <table class="ui selectable inverted table">
+          <thead>
+            <tr>
+              <th class="ten wide">Name</th>
+              <th class="six wide">Color</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+          <tfoot>
+            <tr>
+              <th>Colors</th>
+              <th>Details</th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="ui fluid three item inverted bottom fixed menu">
+      <a class="item">Buy</a>
+      <a class="item">Sell</a>
+      <a class="item">Rent</a>
+    </div>
+  </footer>
+  <!-- Modals -->
+  <div class="ui basic modal">
+    <div class="ui icon center aligned header">
+      <h2 class="center aligned header" id="heading"></h2>
+    </div>
+    <div class="content ">
+      <div class="content-container">
+        <h3 id="hex">Hex: </h3>
+        <i class="copy large icon"><span id="copied">(Copy)</span></i>
+      </div>
+    </div>
+    <div class="actions">
+      <button class="ui red basic cancel inverted button">
+        <i class="remove icon" aria-hidden="true"></i>
+        Close
+      </button>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
